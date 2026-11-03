@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="LG DUALCOOL: điều hòa DUAL Inverter làm lạnh nhanh, giữ nhiệt độ ổn định, vận hành êm. Xem điều hòa LG, chọn công suất phù hợp và nhận ưu đãi thành viên 5%.">
+<title>LG DUALCOOL – Điều hòa dân dụng</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Be+Vietnam+Pro:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f3efe8;--surface:#fff;--soft:#fbe9ee;--ink:#2a1a20;--mute:#6b5a61;--red:#a50034;--on-red:#fff;--line:#e3dad8;--teal:#2e7d6b;--hero:#4a3f3b}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1a1216;--surface:#251a1f;--soft:#3a1e29;--ink:#f5eaee;--mute:#b9a6ad;--red:#e0457a;--on-red:#1a1216;--line:#3b2d33;--teal:#5fc2a8;--hero:#2c2226;color-scheme:dark}}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 "Be Vietnam Pro",system-ui,sans-serif}
+h1,h2,h3{font-family:Anton,"Be Vietnam Pro",Impact,sans-serif;font-weight:400;line-height:1.15;margin:0 0 .5em;color:var(--red);letter-spacing:.01em}
+h1{font-size:clamp(2.2rem,6vw,3.6rem)}h2{font-size:clamp(1.6rem,3.5vw,2.3rem)}h3{font-size:1.2rem;color:var(--ink)}
+p{margin:0 0 1em;max-width:64ch}a{color:inherit}
+.promo{background:#2a1a20;color:#fff;text-align:center;font-size:.85rem;padding:8px 16px}.promo a{color:#ffd1e0;font-weight:600}
+header{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+.bar{max-width:1080px;margin:auto;padding:12px 20px;display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+.logo{font-family:Anton,sans-serif;font-size:1.3rem;color:var(--red);text-decoration:none;margin-right:auto}
+nav{display:flex;gap:4px;flex-wrap:wrap}
+nav a{padding:6px 12px;border-radius:999px;text-decoration:none;font-size:.9rem;color:var(--mute)}
+nav a:hover{color:var(--ink)}nav a[aria-current=page]{background:var(--red);color:var(--on-red)}
+a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--teal);outline-offset:2px}
+main{max-width:1080px;margin:auto;padding:20px 20px 60px}
+.crumb{font-size:.8rem;color:var(--mute);margin-bottom:14px}
+.btn{display:inline-block;background:var(--red);color:var(--on-red);padding:10px 20px;border-radius:8px;text-decoration:none;font:inherit;font-weight:600;border:2px solid var(--red);cursor:pointer;text-align:center}
+.btn.alt{background:transparent;color:var(--red)}
+.acts{display:flex;gap:10px;flex-wrap:wrap}
+.hero{position:relative;border-radius:24px;overflow:hidden;background:linear-gradient(120deg,var(--hero),#8a6f62);color:#fff;display:grid;grid-template-columns:1fr 1fr;align-items:center;min-height:340px;padding:40px}
+.hero h1{color:#fff;margin-bottom:.3em}.hero p{color:#f3e8e4}.hero small{display:block;margin-top:16px;opacity:.75;font-size:.75rem}
+.hero .badge{display:inline-block;font-family:Anton,sans-serif;font-size:1.1rem;margin-bottom:12px}.hero .badge span{background:var(--red);color:var(--on-red);padding:0 8px;border-radius:4px;margin-left:4px}
+.hero svg{width:100%;height:auto}
+.hero .temp{position:absolute;right:11%;top:26%;background:rgba(255,255,255,.88);color:#2a1a20;border-radius:14px;padding:6px 14px;font-family:Anton,sans-serif;font-size:1.6rem}
+.feat{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin:44px 0}
+.feat a{text-decoration:none;display:block}
+.feat .ph{height:160px;border-radius:14px;background:var(--soft);display:flex;align-items:center;justify-content:center;margin-bottom:12px}
+.feat .ph svg{width:70%;height:80%}
+.feat small{color:var(--mute)}.feat h3{font-family:"Be Vietnam Pro",sans-serif;font-weight:500;font-size:1.2rem;line-height:1.35;margin:4px 0 8px}.feat .more{color:var(--red);font-weight:600;font-size:.9rem}
+.shop-head{display:flex;justify-content:space-between;align-items:end;flex-wrap:wrap;gap:12px;margin-top:20px}
+.toolbar{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin:10px 0 14px;color:var(--mute)}
+.toolbar select,.calc input{font:inherit;padding:8px 12px;border-radius:8px;border:1px solid var(--line);background:var(--surface);color:var(--ink)}
+.filters{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:6px 18px 12px;margin-bottom:16px;display:grid;grid-template-columns:repeat(4,1fr);gap:8px 24px;align-items:start}
+.filters fieldset{border:0;padding:10px 0;margin:0}.filters legend{font-weight:600;padding:0}.filters label{display:block;margin:4px 0;font-size:.92rem}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.pc{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px;display:flex;flex-direction:column;gap:6px;position:relative}
+.pc.hl{border:2px solid var(--red)}
+.pc .tg{align-self:flex-start;font-size:.72rem;font-weight:600;border:1px solid var(--red);color:var(--red);border-radius:4px;padding:0 6px}
+.pc svg{width:100%;height:auto;max-height:120px;margin:6px 0}
+.pc h3{font:600 .98rem/1.4 "Be Vietnam Pro",sans-serif;margin:0;color:var(--ink);min-height:4.2em}
+.pc p{margin:0}.pc .mu{color:var(--mute);font-size:.82rem}
+.pc .old{text-decoration:line-through;color:var(--mute);font-size:.85rem;margin-left:6px}
+.pc .pr b{font-size:1.3rem;font-family:Anton,sans-serif;font-weight:400;color:var(--ink)}
+.pc .sv{color:var(--red);font-size:.82rem;font-weight:600}
+.pc .so{font-size:.85rem;color:var(--mute);margin-top:4px}
+.promo-tile{background:var(--red);color:var(--on-red);border-radius:14px;padding:24px;display:flex;flex-direction:column;justify-content:flex-end;gap:6px;min-height:260px}
+.promo-tile h3{color:var(--on-red);font-size:1.6rem}.promo-tile p{margin:0}.promo-tile a{color:var(--on-red);font-weight:600}
+table{width:100%;border-collapse:collapse;margin:12px 0 24px;font-size:.95rem}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:var(--red);color:var(--on-red);font-weight:600}.cmp td:first-child{color:var(--mute);width:24%}
+.scroll{overflow-x:auto}
+.cols{display:grid;gap:20px}.c2{grid-template-columns:1fr 1fr}.c3{grid-template-columns:repeat(3,1fr)}.c4{grid-template-columns:repeat(4,1fr)}
+.col{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px}
+.col.good{border-color:var(--red);border-width:2px}
+.col p{font-size:.92rem;color:var(--mute)}
+ul.tick{padding-left:1.1em;margin:0}ul.tick li{margin-bottom:.4em}.plans{display:grid;gap:20px;grid-template-columns:repeat(3,1fr);align-items:stretch}.plan{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:26px 24px;display:flex;flex-direction:column}.plan.rec2{background:linear-gradient(135deg,var(--soft),var(--surface) 130%);border:2px solid var(--red)}.plan .tag2{position:absolute;top:14px;right:14px;background:var(--surface);color:var(--ink);font-size:.75rem;font-weight:600;border-radius:6px;padding:2px 10px;box-shadow:0 1px 4px rgba(0,0,0,.12)}.plan h3{font-family:"Be Vietnam Pro",sans-serif;font-weight:500;font-size:1.3rem;color:var(--ink);margin:8px 0 6px}.plan .pr{font-family:Anton,"Be Vietnam Pro",sans-serif;font-size:1.9rem;color:var(--ink);margin:0 0 12px}.plan>p{font-size:.92rem;color:var(--mute);margin:0 0 16px}.plan .btn{align-self:flex-start;margin-bottom:18px}.plan ul{list-style:none;padding:0;margin:0}.plan li{display:flex;gap:10px;align-items:flex-start;font-size:.9rem;margin-bottom:12px}.plan li:before{content:"\2713";flex:none;width:20px;height:20px;border-radius:50%;background:var(--teal);color:#fff;font-size:.75rem;display:grid;place-items:center;margin-top:1px}.plans.one{grid-template-columns:minmax(0,380px)}.demo-msg{margin:12px 0 0;color:var(--teal);font-size:.9rem}@media(max-width:760px){.plans{grid-template-columns:1fr}.plans.one{grid-template-columns:1fr}}.toc{display:flex;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--bg);position:sticky;top:var(--hh,56px);z-index:4;margin:22px 0 8px;overflow-x:auto}.toc button{flex:1 0 auto;background:transparent;border:0;border-bottom:3px solid transparent;color:var(--mute);font:inherit;padding:16px 18px;cursor:pointer;white-space:nowrap}.toc button:hover{color:var(--ink)}.toc button.on{color:var(--ink);font-weight:600;border-bottom-color:var(--red)}.tsec{margin-top:40px;scroll-margin-top:calc(var(--hh,56px) + 64px)}.sub{font-family:"Be Vietnam Pro",sans-serif;font-weight:600;font-size:1.1rem;color:var(--ink);margin:0 0 14px}
+.sec{margin-top:56px}
+.sec-head{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:16px}
+.help{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px;text-decoration:none;display:block}
+.help h3{font-size:1.25rem}.help p{font-size:.88rem;color:var(--mute);margin:0}.help .ic{font-size:1.6rem;float:right}
+.calc{background:var(--soft);border-radius:14px;padding:20px;margin:10px 0 30px}.calc input{width:120px}.calc output{display:block;margin-top:12px;font-weight:600}
+.rec{background:var(--surface);border:2px solid var(--red);border-radius:14px;padding:18px 20px;margin:-14px 0 30px}.rec b{font-family:Anton,sans-serif;font-weight:400;font-size:1.4rem;color:var(--red)}.rec p{margin:.3em 0 .9em}
+details{border-bottom:1px solid var(--line);padding:12px 0}summary{cursor:pointer;font-weight:600}
+.note{font-size:.85rem;color:var(--mute);border-left:3px solid var(--teal);padding-left:12px;margin-top:24px}
+.cta-end{display:flex;justify-content:flex-end;align-items:center;gap:16px;margin-top:36px;flex-wrap:wrap}
+.next{border-top:1px solid var(--line);margin-top:36px;padding-top:20px;max-width:64ch}.next a{color:var(--red);font-weight:600}
+.pd{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-top:10px;align-items:start}
+.gal{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:48px 24px;text-align:center}.gal svg{width:100%;max-width:440px}.gal small{display:block;color:var(--mute);margin-top:16px}
+.pd h1{font:500 1.8rem/1.3 "Be Vietnam Pro",sans-serif;color:var(--ink);margin:8px 0}
+.pd .tg{display:inline-block;background:var(--red);color:var(--on-red);font-size:.72rem;font-weight:600;border-radius:4px;padding:1px 8px}
+.pd .sect{border-top:1px solid var(--line);padding:16px 0;margin-top:12px}.pd .sect h2{font:500 1.3rem "Be Vietnam Pro",sans-serif;color:var(--ink);margin:0 0 8px}
+.pd select{font:inherit;padding:10px 12px;border-radius:8px;border:1px solid var(--line);background:var(--surface);color:var(--ink)}
+.box{background:var(--soft);border-radius:14px;padding:16px 18px;margin:12px 0}
+.perks{border:1px solid var(--line);border-radius:14px;padding:4px 18px;margin:12px 0}.perks div{padding:10px 0;border-bottom:1px solid var(--line);font-size:.92rem}.perks div:last-child{border:0}
+.sum{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:20px;margin:18px 0}
+.sum .row{display:flex;justify-content:space-between;gap:12px;align-items:baseline;flex-wrap:wrap}.sum .tot{font-family:Anton,sans-serif;font-size:1.9rem}.sum small{color:var(--mute)}
+.qty{display:flex;gap:8px;align-items:center;margin-top:14px}.qty button{width:36px;height:36px;border-radius:50%;border:1px solid var(--line);background:var(--surface);color:var(--ink);font-size:1.2rem;cursor:pointer}.qty output{min-width:52px;text-align:center;border:1px solid var(--line);border-radius:8px;padding:6px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.chips span{display:inline-block;border:1px solid var(--line);border-radius:6px;padding:2px 10px;font-size:.8rem;margin:10px 8px 0 0;color:var(--mute)}
+.stars button{width:44px;height:44px;border:1px solid #e0a800;background:transparent;color:#e0a800;font-size:1.4rem;border-radius:6px;cursor:pointer;margin-right:8px}
+@media (max-width:860px){.pd{grid-template-columns:1fr}}
+footer{border-top:1px solid var(--line);padding:20px;text-align:center;color:var(--mute);font-size:.85rem}
+@media (max-width:860px){.grid3,.c4,.filters{grid-template-columns:1fr 1fr}.hero,.feat,.c3,.c2{grid-template-columns:1fr}.hero{padding:28px}.hero .temp{display:none}}
+@media (max-width:560px){.grid3,.c4,.filters{grid-template-columns:1fr}.cta-end{justify-content:flex-start}}
+.lead{display:grid;gap:8px;max-width:420px}.lead label{font-weight:600;font-size:.92rem}.lead input{width:100%}.lead .btn{margin-top:8px}.lead output{margin:6px 0 0;color:var(--teal)}
+.fnav{display:flex;gap:6px 14px;justify-content:center;flex-wrap:wrap;margin-bottom:10px}.fnav a{color:var(--red);font-weight:600;text-decoration:none}.fnav a:hover{text-decoration:underline}
+.tuvan{max-width:1100px;margin:40px auto 0;padding:0 20px}.sr{position:absolute;left:-9999px}
+.finder{margin-top:12px}.fsearch{display:flex;gap:8px;flex-wrap:wrap}.fsearch input{flex:1 1 220px;min-width:0}.chips{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}.chip{border:1px solid var(--line);background:transparent;color:inherit;border-radius:999px;padding:6px 14px;cursor:pointer;font:inherit}.chip.on{background:var(--red);border-color:var(--red);color:#fff}
+.fgrid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:16px;align-items:start}.flist{display:grid;gap:12px;max-height:480px;overflow:auto}.store{border:1px solid var(--line);border-radius:14px;padding:14px;background:var(--surface)}.store h3{margin:6px 0}.store p{margin:4px 0}.store .tag{font-size:.78rem;font-weight:700;color:var(--red)}.store .acts{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}.fmap svg{width:100%;height:auto;display:block;margin-bottom:10px}.pin{transition:.2s}.empty{padding:12px}
+@media(max-width:760px){.fgrid{grid-template-columns:1fr}.flist{max-height:none}}
+.pc{border-width:2px}.pc .tgr{min-height:24px}.pc .acts{margin-top:auto!important;padding-top:6px}.pc .so{display:flex;gap:8px;align-items:center;cursor:pointer}.pc .so input:disabled{opacity:.4}
+.cbar{position:fixed;left:0;right:0;bottom:0;z-index:6;background:var(--surface);border-top:2px solid var(--red);padding:10px 20px calc(10px + env(safe-area-inset-bottom,0px));box-shadow:0 -6px 18px rgba(0,0,0,.18)}.cbar[hidden]{display:none}
+.cb-in{max-width:1080px;margin:auto;display:flex;gap:12px;justify-content:space-between;align-items:center;flex-wrap:wrap}.cb-list{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.cb-chip{border:1px solid var(--red);background:transparent;color:var(--red);border-radius:999px;padding:4px 12px;cursor:pointer;font:inherit;font-size:.85rem}.cb-hint{color:var(--mute);font-size:.85rem}
+.btn[disabled]{opacity:.45;cursor:not-allowed}.cx{border:0;background:transparent;color:inherit;cursor:pointer;font-size:1.1rem}
+.best{color:var(--on-red);background:var(--teal);border-radius:4px;padding:0 6px;font-size:.75rem;margin-left:6px}#cmp{padding-bottom:90px}
+
+/* ===== Giao diện điện thoại ===== */
+html{-webkit-text-size-adjust:100%}
+@media (max-width:640px){
+body{font-size:15.5px}
+.promo{font-size:.8rem;padding:6px 12px}
+.bar{padding:8px 14px 4px;gap:2px}
+.logo{font-size:1.15rem;margin-right:0;flex:1 0 100%}
+header nav#nav{flex-wrap:nowrap;overflow-x:auto;flex:1 0 100%;margin:0 -14px;padding:2px 14px 6px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+header nav#nav::-webkit-scrollbar{display:none}
+header nav#nav a{white-space:nowrap;flex:none;padding:8px 14px}
+main{padding:14px 14px 48px}
+h1{font-size:clamp(1.9rem,9vw,2.4rem)}h2{font-size:1.5rem}
+input,select,textarea{font-size:16px}
+.hero{padding:22px 18px;min-height:0;border-radius:18px}
+.col{padding:16px}.box,.sum{padding:14px}
+.filters{grid-template-columns:1fr 1fr!important;gap:0 14px;padding:2px 14px 8px}
+.filters label{padding:6px 0;margin:0}.filters input{width:18px;height:18px;margin-right:6px}
+.toolbar{align-items:flex-start}.toolbar>span:last-child{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.pc{padding:14px}.pc h3{min-height:0}
+.pc .so{padding:8px 0}.pc .so input{width:20px;height:20px}
+.cbar{padding:8px 14px calc(8px + env(safe-area-inset-bottom,0px))}.cb-in{gap:8px}.cb-hint{display:none}.cb-in .acts{width:100%}.cb-in .acts .btn{flex:1;padding:9px 10px}
+#cmp{padding-bottom:110px}
+.cb-list{flex-wrap:nowrap;overflow-x:auto;width:100%;scrollbar-width:none}.cb-list b,.cb-chip{white-space:nowrap;flex:none}
+table.cmp{min-width:620px}.cmp td:first-child,.cmp th:first-child{position:sticky;left:0;background:var(--surface);width:96px;min-width:96px}.cmp th:first-child{background:var(--red)}
+table{font-size:.85rem}th,td{padding:8px}
+.cta-end{flex-direction:column;align-items:stretch}.cta-end .btn{width:100%}
+.fsearch input{flex:1 1 100%}.fsearch .btn{flex:1 1 auto}
+.store .acts .btn{flex:1}.flist{max-height:none}
+.qty button{width:44px;height:44px}
+.gal{padding:24px 12px}
+details{padding:14px 0}summary{padding:2px 0}
+.fnav a{padding:6px 8px}
+}
+</style>
+</head>
+<body>
+<div class="promo">Trở thành thành viên LG để nhận ưu đãi giảm 5% cho đơn hàng đầu tiên. <a href="/">Xem ưu đãi</a></div>
+<header><div class="bar"><a class="logo" href="/">LG DUALCOOL</a><nav id="nav" aria-label="Menu chính"></nav></div></header>
+<main id="app"></main>
+
+<section id="tuvan" class="tuvan"><div class="calc"><h2 style="margin-bottom:.3em">Nhận tư vấn miễn phí</h2><p>Để lại số điện thoại, nhân viên sẽ gọi lại giúp bạn chọn đúng công suất và mẫu máy.</p><div class="lead"><label for="ln">Họ và tên</label><input id="ln" type="text" autocomplete="name" placeholder="Nguyễn Văn A"><label for="lp">Số điện thoại</label><input id="lp" type="tel" inputmode="tel" autocomplete="tel" placeholder="09xx xxx xxx"><button class="btn" id="lsend" type="button">Gửi yêu cầu tư vấn</button><output id="lmsg" aria-live="polite"></output></div></div></section>
+<footer><nav class="fnav" id="fnav" aria-label="Menu chân trang"></nav></footer>
+<script>
+const AC=(c,l)=>`<svg viewBox="0 0 420 150" role="img" aria-label="${l||'Điều hòa treo tường LG'}"><rect x="20" y="20" width="380" height="80" rx="20" fill="${c||'var(--surface)'}" stroke="var(--line)" stroke-width="3"/><rect x="40" y="38" width="340" height="8" rx="4" fill="var(--soft)"/><rect x="40" y="76" width="340" height="10" rx="5" fill="var(--red)" opacity=".85"/><g stroke="var(--teal)" stroke-width="4" stroke-linecap="round" fill="none"><path d="M90 112q10 12 0 26"/><path d="M210 112q10 12 0 26"/><path d="M330 112q10 12 0 26"/></g></svg>`;
+const money=n=>n.toLocaleString('vi-VN')+' ₫';
+const room=hp=>({1:'Dưới 15 m²',1.5:'15 đến 20 m²',2:'20 đến 30 m²',2.5:'Trên 30 m²'}[hp]);
+const P=[
+{m:'IDC12M2',n:'Điều hòa LG DUALCOOL Inverter AI Air 1 chiều 1.5HP',hp:1.5,t:'1 chiều',l:'AI Air',v:14790000,o:16490000,tag:'Đề xuất bởi LG'},
+{m:'IDH12M1',n:'Điều hòa LG DUALCOOL Inverter AI Air 2 chiều 1.5HP',hp:1.5,t:'2 chiều',l:'AI Air',v:16790000,o:18490000},
+{m:'IEC12M2',n:'Điều hòa LG DUALCOOL Inverter 1 chiều 1.5HP',hp:1.5,t:'1 chiều',l:'Inverter',v:11990000,tag:'Premier Care'},
+{m:'IDC09S1',n:'Điều hòa LG DUALCOOL Inverter 1 chiều 1HP',hp:1,t:'1 chiều',l:'Inverter',v:8100000,tag:'Chỉ bán online'},
+{m:'IDC12B2',n:'Điều hòa LG DUALCOOL Inverter AI Air 1 chiều 1.5HP',hp:1.5,t:'1 chiều',l:'AI Air',v:14290000,tag:'Premier Care'},
+{m:'IDC09B2',n:'Điều hòa LG DUALCOOL Inverter AI Air 1 chiều 1HP',hp:1,t:'1 chiều',l:'AI Air',v:11990000,tag:'Premier Care'},
+{m:'IEC12M1',n:'Điều hòa LG DUALCOOL Inverter 1 chiều 1.5HP',hp:1.5,t:'1 chiều',l:'Inverter',v:14190000},
+{m:'IDC24M1',n:'Điều hòa LG DUALCOOL Inverter AI Air 1 chiều 2.5HP',hp:2.5,t:'1 chiều',l:'AI Air',v:34990000},
+{m:'IAC18B1',n:'Điều hòa LG ARTCOOL Inverter AI Air 1 chiều',hp:2,t:'1 chiều',l:'ARTCOOL',v:25990000,tag:'Mới'},
+{m:'IEC18M1',n:'Điều hòa LG DUALCOOL Inverter 1 chiều 2HP',hp:2,t:'1 chiều',l:'Inverter',v:21090000},
+{m:'IEC09M1',n:'Điều hòa LG DUALCOOL Inverter 1 chiều 1HP',hp:1,t:'1 chiều',l:'Inverter',v:11590000}
+];
+const IC={tiet:'<svg role="img" aria-label="Biểu đồ tiết kiệm điện năng" viewBox="0 0 200 120"><polyline points="20,95 60,70 100,78 150,35 185,20" fill="none" stroke="var(--red)" stroke-width="6" stroke-linecap="round"/><rect x="20" y="100" width="165" height="6" rx="3" fill="var(--line)"/></svg>',
+kk:'<svg role="img" aria-label="Biểu tượng luồng không khí tươi mát" viewBox="0 0 200 120"><circle cx="100" cy="60" r="38" fill="none" stroke="var(--teal)" stroke-width="6"/><circle cx="100" cy="60" r="12" fill="var(--teal)"/><path d="M100 22v-14M100 98v14M62 60h-14M152 60h-14" stroke="var(--teal)" stroke-width="6" stroke-linecap="round"/></svg>',
+inv:'<svg role="img" aria-label="Sóng vận hành máy nén DUAL Inverter" viewBox="0 0 200 120"><path d="M10 60q20-40 40 0t40 0 40 0 40 0 20-0" fill="none" stroke="var(--red)" stroke-width="6" stroke-linecap="round"/></svg>'};
+const pages={
+home:{t:"Trang chủ",d:"LG DUALCOOL: điều hòa DUAL Inverter làm lạnh nhanh, giữ nhiệt độ ổn định, vận hành êm. Xem điều hòa LG, chọn công suất phù hợp và nhận ưu đãi thành viên 5%.",h:()=>`
+<section class="hero"><div><span class="badge">LG DUALCOOL<span>AI Air</span></span><h1>Mát sâu, hiểu thấu căn phòng của bạn</h1><p>Điều hòa DUAL Inverter làm lạnh nhanh, giữ nhiệt độ ổn định và vận hành êm. Chọn đúng công suất để tiết kiệm điện mỗi tháng.</p><div class="acts"><a class="btn" href="/san-pham">Xem điều hòa</a><a class="btn alt" style="color:#fff;border-color:#fff" href="/cong-suat">Chọn công suất</a></div><small>*Hình ảnh chỉ mang tính minh họa.</small></div><div style="position:relative">${AC('#fff')}<span class="temp">23°C</span></div></section>
+<section class="feat" aria-label="Điểm nổi bật">
+<a href="/dual-inverter"><div class="ph">${IC.tiet}</div><small>Tiết kiệm điện năng</small><h3>Tiết kiệm năng lượng và bảo vệ trái đất</h3><span class="more">Tìm hiểu thêm</span></a>
+<a href="/dual-inverter"><div class="ph">${IC.kk}</div><small>Giải pháp không khí toàn diện</small><h3>Để tận hưởng làn gió mát tươi mới</h3><span class="more">Tìm hiểu thêm</span></a>
+<a href="/dual-inverter"><div class="ph">${IC.inv}</div><small>DUAL Inverter Compressor</small><h3>Làm mát và sưởi ấm quanh năm</h3><span class="more">Tìm hiểu thêm</span></a></section>
+<section class="sec"><h2>Tìm hiểu thêm về LG Điều hòa</h2><p>Hệ thống lọc khí và máy nén DUAL Inverter giúp căn phòng mát, sạch và êm hơn. Khám phá các mẫu điều hòa LG DUALCOOL trong tab <a href="/san-pham" style="color:var(--red);font-weight:600">Sản phẩm</a>. <a href="/dual-inverter" style="color:var(--red);font-weight:600">Xem công nghệ DUAL Inverter</a></p></section>
+<section class="sec"><div class="sec-head"><h2 style="margin:0">Trở thành thành viên LG</h2><a class="btn" href="https://www.lg.com/vn" target="_blank" rel="noopener">Đăng nhập / Đăng ký</a></div>
+<div class="cols c3"><div class="col"><h3>Ưu đãi thành viên mới</h3><p>Nhận ưu đãi 5% cho đơn hàng đầu tiên khi bạn tham gia.</p></div><div class="col"><h3>Chương trình trả góp</h3><p>Hỗ trợ trả góp 0% lãi suất theo điều kiện từng chương trình.</p></div><div class="col"><h3>Miễn phí giao hàng và lắp đặt</h3><p>Giao hàng và hỗ trợ lắp đặt miền phí theo chính sách mua hàng của LG.</p></div></div></section>
+<section class="sec"><div class="sec-head"><h2 style="margin:0">Bạn cần trợ giúp?</h2><a class="btn alt" href="https://www.lg.com/vn" target="_blank" rel="noopener">Nhận hỗ trợ</a></div>
+<div class="cols c4">
+<a class="help" href="/bao-hanh"><span class="ic">＋</span><h3>Đăng ký sản phẩm</h3><p>Đăng ký để nhận hỗ trợ nhanh hơn.</p></a>
+<a class="help" href="/bao-hanh"><span class="ic">▤</span><h3>Hỗ trợ sản phẩm</h3><p>Tìm tài liệu hướng dẫn, khắc phục sự cố.</p></a>
+<a class="help" href="/mua-hang"><span class="ic">▥</span><h3>Hỗ trợ đặt hàng</h3><p>Tra cứu thông tin đơn hàng và giao hàng.</p></a>
+<a class="help" href="/bao-hanh"><span class="ic">✎</span><h3>Yêu cầu sửa chữa</h3><p>Đặt lịch sửa chữa trực tuyến.</p></a>
+<a class="help" href="https://www.lg.com/vn" target="_blank" rel="noopener"><span class="ic">✉</span><h3>Chat trực tiếp</h3><p>Chat với chuyên viên để được tư vấn.</p></a>
+<a class="help" href="https://www.lg.com/vn" target="_blank" rel="noopener"><span class="ic">☗</span><h3>Zalo</h3><p>Chat với bộ phận hỗ trợ qua Zalo.</p></a>
+<a class="help" href="https://www.lg.com/vn" target="_blank" rel="noopener"><span class="ic">@</span><h3>Gửi email</h3><p>Gửi email cho bộ phận hỗ trợ LG.</p></a>
+<a class="help" href="https://www.lg.com/vn" target="_blank" rel="noopener"><span class="ic">☎</span><h3>Gọi cho chúng tôi</h3><p>Trò chuyện trực tiếp với tư vấn viên.</p></a></div>
+<p class="note">Giá và chương trình khuyến mãi có thể thay đổi theo cửa hàng và thời điểm. Hãy xem trang LG Việt Nam để biết thông tin mới nhất.</p></section>`},
+"san-pham":{t:"Sản phẩm",d:"Danh sách điều hòa LG DUALCOOL Inverter 1 chiều, 2 chiều, từ 1HP đến 2.5HP. Lọc theo công suất, loại máy, khoảng giá và so sánh thông số để chọn máy phù hợp.",h:()=>`
+<div class="crumb">Trang chủ › Điều hòa không khí</div>
+<section id="dieu-hoa"><div class="shop-head"><h1 style="margin:0">Điều hòa dân dụng</h1></div>
+<div class="toolbar"><span id="cnt"></span><span><button class="btn alt" id="rs" type="button">Xóa bộ lọc</button> <label>Sắp xếp <select id="srt"><option value="n">Mới nhất</option><option value="a">Giá thấp đến cao</option><option value="d">Giá cao đến thấp</option></select></label></span></div>
+<div class="filters" role="group" aria-label="Bộ lọc">
+<fieldset><legend>Công suất</legend><label><input type="checkbox" data-g="hp" value="1"> 1 HP</label><label><input type="checkbox" data-g="hp" value="1.5"> 1.5 HP</label><label><input type="checkbox" data-g="hp" value="2"> 2 HP</label><label><input type="checkbox" data-g="hp" value="2.5"> 2.5 HP</label></fieldset>
+<fieldset><legend>Loại máy</legend><label><input type="checkbox" data-g="t" value="1 chiều"> 1 chiều (chỉ làm lạnh)</label><label><input type="checkbox" data-g="t" value="2 chiều"> 2 chiều (lạnh và sưởi)</label></fieldset>
+<fieldset><legend>Dòng sản phẩm</legend><label><input type="checkbox" data-g="l" value="AI Air"> AI Air</label><label><input type="checkbox" data-g="l" value="Inverter"> Inverter</label><label><input type="checkbox" data-g="l" value="ARTCOOL"> ARTCOOL</label></fieldset>
+<fieldset><legend>Khoảng giá</legend><label><input type="checkbox" data-g="pr" value="a"> Dưới 12 triệu</label><label><input type="checkbox" data-g="pr" value="b"> 12 đến 20 triệu</label><label><input type="checkbox" data-g="pr" value="c"> Trên 20 triệu</label></fieldset></div>
+<h2 style="margin:18px 0 10px">Danh sách điều hòa LG DUALCOOL</h2>
+<div class="grid3" id="grid"></div><div id="cmp"></div></section><div class="cbar" id="cbar" hidden></div>`,
+after(){
+const g=document.getElementById('grid'),cnt=document.getElementById('cnt'),cmp=document.getElementById('cmp'),srt=document.getElementById('srt'),sel=new Set(),fl=()=>[...document.querySelectorAll('.filters input')];
+const band=v=>v<12e6?'a':v<=20e6?'b':'c';
+const MAX=4;let shown=false;const cbar=document.getElementById('cbar'),byM=m=>P.find(o=>o.m===m);
+function cd(){const L=[...sel].map(byM);if(!shown||L.length<2){cmp.innerHTML='';return}
+const best=Math.min(...L.map(o=>o.v));
+const rows=[['Tên máy',o=>o.n],['Công suất',o=>o.hp+' HP'],['Loại máy',o=>o.t],['Dòng sản phẩm',o=>o.l],['Phòng phù hợp',o=>room(o.hp)],['Giá gốc',o=>o.o?money(o.o):'Không có'],['Giá tham khảo',o=>money(o.v)+(o.v===best?' <b class="best">Thấp nhất</b>':'')],['Ưu đãi',o=>o.tag||'Không có']];
+cmp.innerHTML='<h2 style="margin-top:32px">So sánh '+L.length+' mẫu đã chọn</h2><div class="scroll"><table class="cmp"><tr><th>Thông số</th>'+L.map(o=>'<th>'+o.m+' <button type="button" class="cx" data-x="'+o.m+'" aria-label="Bỏ '+o.m+'">×</button></th>').join('')+'</tr>'+rows.map(r=>'<tr><td>'+r[0]+'</td>'+L.map(o=>'<td>'+r[1](o)+'</td>').join('')+'</tr>').join('')+'<tr><td></td>'+L.map(o=>'<td><a class="btn" href="/sp/'+o.m+'">Mua ngay</a></td>').join('')+'</tr></table></div>';
+cmp.querySelectorAll('[data-x]').forEach(x=>x.onclick=()=>drop(x.dataset.x))}
+function bar(){const L=[...sel];cbar.hidden=!L.length;if(!L.length)return;
+cbar.innerHTML='<div class="cb-in"><div class="cb-list"><b>Đã chọn '+L.length+'/'+MAX+' mẫu</b>'+L.map(m=>'<button type="button" class="cb-chip" data-x="'+m+'" aria-label="Bỏ '+m+'">'+m+' ×</button>').join('')+(L.length<2?'<span class="cb-hint">Chọn thêm ít nhất 1 mẫu</span>':L.length>=MAX?'<span class="cb-hint">Đã đủ '+MAX+' mẫu</span>':'')+'</div><div class="acts"><button type="button" class="btn" id="cgo"'+(L.length<2?' disabled':'')+'>So sánh ngay</button><button type="button" class="btn alt" id="cclr">Xóa chọn</button></div></div>';
+cbar.querySelectorAll('[data-x]').forEach(x=>x.onclick=()=>drop(x.dataset.x));
+document.getElementById('cclr').onclick=()=>{sel.clear();shown=false;sync()};
+document.getElementById('cgo').onclick=()=>{shown=true;cd();cmp.scrollIntoView({behavior:'smooth'})}}
+function drop(m){sel.delete(m);if(sel.size<2)shown=false;sync()}
+function sync(){g.querySelectorAll('[data-c]').forEach(x=>{x.checked=sel.has(x.dataset.c);x.disabled=!x.checked&&sel.size>=MAX});bar();cd()}
+function draw(){const f={};fl().forEach(x=>{if(x.checked)(f[x.dataset.g]=f[x.dataset.g]||[]).push(x.value)});
+const L=P.filter(o=>(!f.hp||f.hp.includes(String(o.hp)))&&(!f.t||f.t.includes(o.t))&&(!f.l||f.l.includes(o.l))&&(!f.pr||f.pr.includes(band(o.v))));
+if(srt.value==='a')L.sort((a,b)=>a.v-b.v);if(srt.value==='d')L.sort((a,b)=>b.v-a.v);
+cnt.textContent=L.length+' kết quả';
+const cards=L.map((o,i)=>'<article class="pc'+(o.o?' hl':'')+'">'+'<div class="tgr">'+(o.tag?'<span class="tg">'+o.tag+'</span>':'')+'</div>'+AC(0,o.n+' mã '+o.m)+'<h3>'+o.n+'</h3><p class="mu">Mã '+o.m+' · '+room(o.hp)+'</p><p class="pr"><b>'+money(o.v)+'</b>'+(o.o?'<span class="old">'+money(o.o)+'</span>':'')+'</p>'+'<p class="sv"'+(o.o?'':' aria-hidden="true" style="visibility:hidden"')+'>'+(o.o?'Giảm '+money(o.o-o.v):'&nbsp;')+'</p>'+'<div class="acts" style="margin-top:6px"><a class="btn" href="/sp/'+o.m+'">Mua ngay</a></div><label class="so"><input type="checkbox" data-c="'+o.m+'"'+(sel.has(o.m)?' checked':'')+'> So sánh</label></article>');
+if(L.length>3)cards.splice(5,0,'<a class="promo-tile" href="/mua-hang"><h3>Ưu đãi hot không thể bỏ lỡ</h3><p>Xem cách mua chính hãng và ưu đãi hiện có.</p><span>Xem cách mua →</span></a>');
+g.innerHTML=cards.join('')||'<p>Không có mẫu phù hợp. Hãy bỏ bớt bộ lọc.</p>';
+g.querySelectorAll('[data-c]').forEach(x=>x.onchange=()=>{if(x.checked){if(sel.size>=MAX){x.checked=false;return}sel.add(x.dataset.c)}else{sel.delete(x.dataset.c);if(sel.size<2)shown=false}sync()});sync()}
+fl().forEach(x=>x.onchange=draw);srt.onchange=draw;document.getElementById('rs').onclick=()=>{fl().forEach(x=>x.checked=false);draw()};draw();
+}},
+sp:{t:"Chi tiết sản phẩm",d:()=>{const o=P.find(x=>x.m===cur.split('/')[1])||P[5];return ('Mua '+o.n+' mã '+o.m+', giá '+money(o.v)+'. Xem tính năng, kiểm tra hàng có sẵn tại tỉnh thành của bạn và cách mua chính hãng.').slice(0,160)},h:()=>{const id=cur.split('/')[1],o=P.find(x=>x.m===id)||P[5];
+const ft=['Công suất '+o.hp+' HP, phù hợp phòng '+room(o.hp).toLowerCase(),'Loại máy: '+o.t,'Dòng sản phẩm: '+o.l].concat(o.m==='IDC09B2'?['Plasmaster Ionizer++','Độ ẩm dễ chịu']:[]);
+return `<div class="crumb"><a href="/">Trang chủ</a> › <a href="/san-pham">Tất cả máy điều hòa không khí</a> › ${o.m}</div>
+<div class="pd"><div><a href="/san-pham" style="font-size:.85rem">‹ Quay lại danh sách</a><div class="gal" style="margin-top:10px">${AC('',o.n+' mã '+o.m)}<small>Hình minh họa · 1 / 1</small></div></div>
+<div>${o.tag?'<span class="tg">'+o.tag+'</span>':''}<h1>${o.n} ${o.m}</h1><p class="mu" style="color:var(--mute);margin:0">${o.m}</p><p style="margin:6px 0;color:#e0a800" aria-label="0 đánh giá">★★★★★ <small style="color:var(--mute)">0 đánh giá</small></p>
+<div class="sect"><h2>Tính năng chính</h2><ul class="tick">${ft.map(x=>'<li>'+x+'</li>').join('')}</ul></div>
+<div class="box"><div style="font-size:.9rem;margin-bottom:8px">Hàng có sẵn:</div><div class="acts"><select id="tp" aria-label="Tỉnh / Thành phố"><option value="">Tỉnh / Thành phố</option><option>TP. Hồ Chí Minh</option><option>Hà Nội</option><option>Đà Nẵng</option><option>Hải Phòng</option><option>Cần Thơ</option></select><button class="btn alt" id="kt" type="button">Kiểm tra</button></div><p id="ktr" aria-live="polite" style="margin:8px 0 0;font-size:.88rem"></p></div>
+<div class="perks"><div>Để nhận thêm ưu đãi, vui lòng liên hệ Hotline: 1800-1590 hoặc nhắn tin</div><div>Giao hàng miễn phí</div><div>Đổi trả miễn phí trong vòng 15 ngày</div></div>
+<p style="font-size:.85rem;color:var(--mute);margin:0">* Các tùy chọn giao hàng có thể khác theo khu vực.<br>* Việc chậm trễ giao hàng có thể xảy ra do vận hành của đối tác giao hàng.</p>
+<div class="sum"><div class="row"><span style="font-size:1.2rem">Tạm tính</span><span id="sub">${money(o.v)}</span></div><small>${o.m}</small><hr style="border:0;border-top:1px solid var(--line);margin:14px 0">
+<div class="row"><span style="font-size:1.3rem">Tổng giá trị đơn hàng</span><span class="tot" id="tot">${money(o.v)}</span></div><div style="text-align:right;font-size:.85rem" id="ins"></div>
+<div class="qty"><button type="button" id="mn" aria-label="Giảm">−</button><output id="q">1</output><button type="button" id="pl" aria-label="Tăng">+</button></div></div>
+<div class="two"><button class="btn alt" id="cart" type="button">Thêm vào giỏ hàng</button><button class="btn" id="pay" type="button">Thanh toán</button></div>
+<p class="note" id="msg" aria-live="polite" hidden></p><div class="chips"><span>VISA</span><span>Mastercard</span><span>Thẻ ATM nội địa</span></div></div></div>
+<section class="sec"><h2>Mọi người đang nói gì</h2><p style="color:var(--mute);margin-bottom:6px">Đánh giá</p><div class="stars" id="st">${[1,2,3,4,5].map(i=>'<button type="button" data-s="'+i+'" aria-label="'+i+' sao">☆</button>').join('')}</div><p style="font-size:.85rem;color:var(--mute);margin-top:10px">Hãy là người đầu tiên đánh giá sản phẩm này.</p></section>`},
+after(){const id=cur.split('/')[1],o=P.find(x=>x.m===id)||P[5];let n=1;const $=i=>document.getElementById(i),msg=t=>{$('msg').hidden=false;$('msg').textContent=t};
+const up=()=>{$('q').textContent=n;$('sub').textContent=$('tot').textContent=money(o.v*n);$('ins').innerHTML='<u>Chỉ '+Math.round(o.v*n/12).toLocaleString('vi-VN')+'đ/tháng (12 tháng) với 0% lãi suất</u>'};up();
+$('mn').onclick=()=>{if(n>1){n--;up()}};$('pl').onclick=()=>{if(n<10){n++;up()}};
+$('kt').onclick=()=>{const v=$('tp').value;$('ktr').textContent=v?'Để kiểm tra tồn kho tại '+v+', vui lòng liên hệ Hotline 1800-1590.':'Vui lòng chọn tỉnh / thành phố.'};
+$('cart').onclick=()=>msg('Đã thêm '+n+' x '+o.m+' vào giỏ hàng (bản demo).');
+$('pay').onclick=()=>msg('Đây là bản demo nên chưa có thanh toán thật. Để mua chính hãng, xem trang Cách mua.');
+document.querySelectorAll('#st button').forEach(b=>b.onclick=()=>document.querySelectorAll('#st button').forEach(x=>x.textContent=+x.dataset.s<=+b.dataset.s?'★':'☆'))}},
+"dual-inverter":{t:"DUAL Inverter",d:"DUAL Inverter là gì? Tìm hiểu công nghệ máy nén của điều hòa LG DUALCOOL, so sánh với máy thường và mẹo dùng điều hòa tiết kiệm điện, giảm tiền điện mỗi tháng.",h:()=>`
+<h1>DUAL Inverter là gì?</h1><p>Bài này giải thích công nghệ inverter bằng ngôn ngữ đơn giản, so sánh với máy thường và gợi ý cách dùng để bớt tiền điện. Nội dung áp dụng cho điều hòa LG DUALCOOL, giúp bạn chọn điều hòa phù hợp và dùng điều hòa tiết kiệm điện hơn.</p>
+<div class="cols c3"><div class="col"><h3>Inverter là gì</h3><p>Máy lạnh thường chạy hết công suất rồi ngắt khi đủ lạnh. Máy inverter đổi tốc độ máy nén theo nhiệt độ phòng, nên nhiệt độ ổn định hơn và ít giật cục.</p></div><div class="col"><h3>DUAL Inverter</h3><p>Là tên công nghệ máy nén của LG. Mục tiêu là chạy êm, rung ít và làm lạnh nhanh lúc đầu rồi duy trì mức vừa đủ.</p></div><div class="col"><h3>Cách tiết kiệm điện</h3><ul class="tick"><li>Đặt 26–27°C khi ngủ</li><li>Đóng kín cửa phòng</li><li>Vệ sinh lưới lọc định kỳ</li><li>Không tắt bật liên tục</li></ul></div></div>
+<h2 style="margin-top:36px">DUAL Inverter so với máy thường</h2>
+<div class="cols c2"><div class="col"><h3>Máy thường</h3><ul class="tick"><li>Bật tắt máy nén theo chu kỳ</li><li>Nhiệt độ dao động</li><li>Tiếng ồn tăng giảm theo lúc chạy</li></ul></div><div class="col good"><h3>DUAL Inverter</h3><ul class="tick"><li>Điều chỉnh tốc độ liên tục</li><li>Nhiệt độ ổn định hơn</li><li>Vận hành êm hơn</li></ul></div></div>
+<p class="next">Hiểu công nghệ rồi, câu hỏi tiếp theo thường là phòng của mình cần máy bao nhiêu HP. <a href="/cong-suat">Nhập diện tích phòng để xem công suất phù hợp</a>.</p>`},
+"cong-suat":{t:"Chọn công suất",d:"Nhập diện tích phòng để biết nên chọn điều hòa 1HP, 1.5HP, 2HP hay 2.5HP. Bảng tra nhanh công suất điều hòa LG DUALCOOL theo m² giúp mua đúng và tiết kiệm điện.",h:()=>`
+<h1>Chọn công suất theo diện tích phòng</h1><p>Máy quá nhỏ sẽ chạy liên tục mà vẫn nóng. Máy quá lớn tốn tiền mua mà không có lợi thêm. Công thức dưới đây giúp bạn chọn điều hòa đúng công suất.</p>
+<div class="calc"><label for="m2">Diện tích phòng (m²)</label><br><input id="m2" type="number" min="1" max="100" placeholder="Ví dụ 18"> <output id="res" aria-live="polite">Nhập diện tích để xem gợi ý.</output></div>
+<div class="rec" id="rec" hidden></div>
+<h2>Bảng tra nhanh (tham khảo)</h2>
+<div class="scroll"><table><tr><th>Diện tích</th><th>Công suất</th><th>Mẫu trong danh sách</th></tr><tr><td>Đến khoảng 15 m²</td><td>1 HP</td><td>IDC09S1, IDC09B2, IEC09M1</td></tr><tr><td>15 đến 20 m²</td><td>1.5 HP</td><td>IEC12M2, IEC12M1, IDC12M2, IDC12B2, IDH12M1</td></tr><tr><td>20 đến 30 m²</td><td>2 HP</td><td>IEC18M1, IAC18B1</td></tr><tr><td>Trên 30 m²</td><td>2.5 HP</td><td>IDC24M1</td></tr></table></div>
+<p>Phòng hướng tây, tầng áp mái hoặc nhiều người ở nên chọn lên một bậc.</p>
+<div class="cta-end"><a class="btn" href="/san-pham">Xem danh sách điều hòa</a></div>`,after(){const i=document.getElementById("m2"),o=document.getElementById("res"),r=document.getElementById('rec');i.oninput=()=>{const v=+i.value;if(!v||v<=0){r.hidden=true;o.textContent="Nhập diện tích để xem gợi ý.";return}
+const hp=v<=15?1:v<=20?1.5:v<=30?2:2.5,ex=P.filter(p=>p.hp===hp).slice(0,3);
+o.textContent="Gợi ý: "+hp+" HP cho phòng "+v+" m².";r.hidden=false;r.innerHTML='<b>'+hp+' HP · '+room(hp)+'</b><p>Một số mẫu phù hợp: '+ex.map(p=>p.m+' ('+money(p.v)+')').join(', ')+'.</p><a class="btn" href="/san-pham">Xem danh sách điều hòa</a>'}}},
+"mua-hang":{t:"Cách mua",d:"Hướng dẫn mua điều hòa LG DUALCOOL chính hãng: đặt hàng trên LG Việt Nam hoặc tìm cửa hàng LG gần bạn, xem địa chỉ, số điện thoại, chỉ đường và giải đáp thắc mắc thường gặp.",h:()=>`
+<h1>Mua LG DUALCOOL ở đâu</h1><p>Mua đúng kênh chính hãng để được bảo hành. Bạn có thể mua trực tiếp trên LG hoặc đến cửa hàng LG gần nhà. Phần này hướng dẫn cách mua điều hòa LG DUALCOOL chính hãng, từ đặt hàng online đến tìm cửa hàng LG gần bạn.</p>
+<div class="cols"><div class="col"><h3>Mua trên LG</h3><p>Đặt hàng ngay trên website LG Việt Nam. Sản phẩm và thông tin do chính LG cung cấp.</p><a class="btn" href="https://www.lg.com/vn" target="_blank" rel="noopener">Mua ngay trên LG</a></div></div>
+<h2 id="tim-dai-ly" style="margin-top:36px">Tìm LG gần bạn</h2>
+<p>Nhập quận, phường hoặc tên đường để lọc danh sách. Nếu không thấy kết quả, bấm "Tìm trên Google Maps" để xem các cửa hàng LG quanh khu vực đó.</p>
+<div class="finder"><div class="fsearch"><label class="sr" for="fq">Địa điểm</label><input id="fq" type="search" placeholder="Ví dụ: Gò Vấp, Quận 1, Bình Thạnh"><button class="btn" id="fgo" type="button">Tìm</button><button class="btn alt" id="fmapbtn" type="button">Tìm trên Google Maps</button><button class="btn alt" id="fgeo" type="button">Vị trí của tôi</button></div>
+
+<div class="fgrid"><div class="flist" id="flist" aria-live="polite"></div><div class="fmap"><svg id="fsvg" viewBox="0 0 400 360" role="img" aria-label="Bản đồ minh họa vị trí cửa hàng LG"><rect width="400" height="360" rx="14" fill="var(--surface)" stroke="var(--line)"/><path d="M0 250 C90 220 150 280 240 250 S360 220 400 245 L400 360 L0 360Z" fill="rgba(45,212,191,.14)"/><g stroke="var(--line)" stroke-width="10" fill="none" stroke-linecap="round"><path d="M20 60 L380 90"/><path d="M30 170 L370 150"/><path d="M80 20 L110 340"/><path d="M220 20 L250 330"/><path d="M330 30 L310 300"/></g><g stroke="var(--line)" stroke-width="4" fill="none"><path d="M20 120 L380 120"/><path d="M40 220 L360 205"/><path d="M160 20 L170 330"/><path d="M280 25 L290 320"/></g><text x="22" y="48" fill="currentColor" opacity=".55" font-size="12">Gò Vấp</text><text x="320" y="68" fill="currentColor" opacity=".55" font-size="12">Bình Thạnh</text><text x="150" y="330" fill="currentColor" opacity=".55" font-size="12">Quận 1</text><text x="300" y="340" fill="currentColor" opacity=".4" font-size="11">Sông Sài Gòn</text><g id="pins"></g></svg>
+<a class="btn" id="fgm" target="_blank" rel="noopener" href="https://www.google.com/maps/search/c%E1%BB%ADa+h%C3%A0ng+LG+H%E1%BB%93+Ch%C3%AD+Minh">Mở Google Maps</a><p class="note" style="margin:6px 0 0">Bản đồ minh họa, không đúng tỷ lệ. Bấm "Mở Google Maps" để xem bản đồ thật.</p></div></div>
+<p class="note">Danh sách chỉ gồm một số địa điểm mẫu tại TP.HCM. Danh sách đầy đủ và mới nhất nằm tại <a href="https://www.lg.com/vn/brandshop" target="_blank" rel="noopener">LG Brandshop</a>. Hãy gọi hotline LG 1800 1503 để xác nhận trước khi đến.</p></div>
+<h2 style="margin-top:36px">Câu hỏi thường gặp</h2>
+<details><summary>Mua online có được bảo hành chính hãng không?</summary><p>Có, nếu mua từ kênh chính hãng của LG. Giữ hóa đơn và phiếu bảo hành.</p></details>
+<details><summary>Làm sao biết cửa hàng có được LG ủy quyền?</summary><p>Hỏi cửa hàng về giấy ủy quyền hoặc liên hệ LG Việt Nam để xác nhận. Nên cẩn thận với nơi bán giá thấp bất thường.</p></details>
+<div class="cta-end"><span>Chưa chắc nên chọn mẫu nào?</span><a class="btn" href="/cong-suat">Tính công suất</a><a class="btn alt" href="/bao-hanh">Xem bảo hành</a></div>`,after(){const S=[{n:"Trung tâm bảo hành LG - Huỳnh Tấn Phát",t:"bh",d:"Quận 7",x:270,y:312,a:"Tầng 1, Tòa nhà Huna, 829-833 Huỳnh Tấn Phát, P. Phú Thuận, TP.HCM",p:"1800 1503"},{n:"Trung tâm bảo hành LG - Quận 1",t:"bh",d:"Quận 1",x:215,y:255,a:"55 Sương Nguyệt Ánh, P. Bến Thành, Q.1, TP.HCM",p:"(028) 3926 0424"},{n:"Trung tâm bảo hành LG - Gò Vấp",t:"bh",d:"Gò Vấp",x:105,y:95,a:"18C Phan Văn Trị, P. 10, Q. Gò Vấp, TP.HCM",p:"(028) 3814 3929"}];
+const $=id=>document.getElementById(id),q=$("fq"),list=$("flist"),pins=$("pins"),gm=$("fgm"),GM="https://www.google.com/maps/search/?api=1&query=";let type="all";
+const nrm=x=>x.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/đ/g,"d");
+const esc=x=>x.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const show=i=>{pins.innerHTML=S.map((x,k)=>'<g class="pin'+(k===i?" on":"")+'" transform="translate('+x.x+' '+x.y+')"><path d="M0 0C-14-16-14-34 0-34S14-16 0 0Z" fill="'+(k===i?"var(--red)":"#888")+'"/><circle cy="-23" r="5" fill="#fff"/></g>').join("");if(i>=0)gm.href=GM+encodeURIComponent(S[i].n+", "+S[i].a)};
+const render=()=>{const k=nrm(q.value.trim());const r=S.filter(x=>(type==="all"||x.t===type)&&(!k||nrm(x.n+" "+x.a+" "+x.d).includes(k)));
+list.innerHTML=r.length?r.map(x=>{const i=S.indexOf(x);return '<article class="store"><span class="tag">'+"Trung tâm LG"+'</span><h3>'+esc(x.n)+'</h3><p>'+esc(x.a)+'</p><p>'+(x.p?'Điện thoại: <a href="tel:'+x.p.replace(/[^\d+]/g,"")+'">'+esc(x.p)+'</a>':'Điện thoại: đang cập nhật')+'</p><div class="acts"><button type="button" class="btn alt" data-v="'+i+'">Xem bản đồ</button><a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination='+encodeURIComponent(x.a)+'">Chỉ đường</a></div></article>'}).join(""):'<p class="empty">Không có địa điểm mẫu khớp với "'+esc(q.value)+'". Bấm "Tìm trên Google Maps" để xem cửa hàng LG quanh khu vực này.</p>'};
+list.onclick=e=>{const b=e.target.closest("button[data-v]");if(b){show(+b.dataset.v)}};
+$("fgo").onclick=render;q.onkeydown=e=>{if(e.key==="Enter"){e.preventDefault();render()}};q.oninput=render;
+$("fmapbtn").onclick=()=>{const v=q.value.trim();window.open(GM+encodeURIComponent("cửa hàng LG "+(v||"Hồ Chí Minh")),"_blank","noopener")};
+$("fgeo").onclick=()=>{if(!navigator.geolocation){alert("Trình duyệt không hỗ trợ định vị.");return}navigator.geolocation.getCurrentPosition(g=>window.open("https://www.google.com/maps/search/"+encodeURIComponent("cửa hàng LG")+"/@"+g.coords.latitude+","+g.coords.longitude+",14z","_blank","noopener"),()=>alert("Không lấy được vị trí. Hãy nhập quận hoặc địa chỉ."))};
+render();show(-1)}},
+"bao-hanh":{t:"Bảo hành",d:"Chính sách bảo hành máy lạnh LG DUALCOOL: chi phí gia hạn và bảo dưỡng, điều kiện, thời hạn bảo hành và cách liên hệ LG.",h:()=>`
+<h1>Bảo hành và dịch vụ hậu mãi điều hòa LG</h1>
+<p>Mua máy lạnh là khoản đầu tư lớn, nên chính sách bảo hành quan trọng không kém công suất hay giá bán. Bài viết này giải thích rõ bảo hành máy lạnh LG gồm những gì, thời hạn tính thế nào, khi nào bị từ chối bảo hành và cách liên hệ LG khi máy gặp sự cố. Nhờ vậy bạn có thể yên tâm chọn điều hòa LG và biết cách bảo vệ quyền lợi của mình.</p>
+<nav class="toc" id="toc" aria-label="Mục lục trang bảo hành"><button type="button" data-t="s-chiphi" class="on">Chi phí</button><button type="button" data-t="s-dieukien">Điều kiện bảo hành</button><button type="button" data-t="s-thoihan">Thời hạn bảo hành máy lạnh LG</button><button type="button" data-t="s-lienhe">Cách liên hệ bảo hành LG</button></nav>
+<h2 id="s-chiphi" class="tsec">Chi phí</h2>
+<h3 class="sub">Gia hạn bảo hành</h3>
+<div class="plans"><div class="plan rec2"><span class="tag2">♕ Đề xuất</span><h3>12 tháng</h3><div class="pr">Từ 350,000đ ~</div><p>Tận hưởng không khí mát mẻ với dịch vụ chăm sóc toàn diện cho máy điều hòa của bạn, bao gồm sửa chữa và thay thế linh kiện cần thiết để đảm bảo sự thoải mái và độ bền lâu dài.</p><button type="button" class="btn demo-btn">Đăng ký</button><ul><li>Linh kiện LG chính hãng</li><li>Không giới hạn số lần sửa chữa</li><li>Đội ngũ kỹ thuật viên LG chuyên nghiệp</li><li>Phạm vi bảo hành tương đương với bảo hành tiêu chuẩn</li><li>Tổng giá trị sửa chữa tối đa sẽ không vượt quá giá niêm yết của sản phẩm đó</li></ul></div><div class="plan"><h3>24 tháng</h3><div class="pr">Từ 600,000đ ~</div><p>Tận hưởng không khí mát mẻ với dịch vụ chăm sóc toàn diện cho máy điều hòa của bạn, bao gồm sửa chữa và thay thế linh kiện cần thiết để đảm bảo sự thoải mái và độ bền lâu dài.</p><button type="button" class="btn demo-btn">Đăng ký</button><ul><li>Linh kiện LG chính hãng</li><li>Không giới hạn số lần sửa chữa</li><li>Đội ngũ kỹ thuật viên LG chuyên nghiệp</li><li>Phạm vi bảo hành tương đương với bảo hành tiêu chuẩn</li><li>Tổng giá trị sửa chữa tối đa sẽ không vượt quá giá niêm yết của sản phẩm đó</li></ul></div><div class="plan"><h3>36 tháng</h3><div class="pr">Từ 900,000đ ~</div><p>Tận hưởng không khí mát mẻ với dịch vụ chăm sóc toàn diện cho máy điều hòa của bạn, bao gồm sửa chữa và thay thế linh kiện cần thiết để đảm bảo sự thoải mái và độ bền lâu dài.</p><button type="button" class="btn demo-btn">Đăng ký</button><ul><li>Linh kiện LG chính hãng</li><li>Không giới hạn số lần sửa chữa</li><li>Đội ngũ kỹ thuật viên LG chuyên nghiệp</li><li>Phạm vi bảo hành tương đương với bảo hành tiêu chuẩn</li><li>Tổng giá trị sửa chữa tối đa sẽ không vượt quá giá niêm yết của sản phẩm đó</li></ul></div></div>
+<p class="note" style="margin-top:14px">* Chi phí đã bao gồm thuế phí.<br>* Giá trên không áp dụng kèm các ưu đãi khác của LG.</p>
+<h3 class="sub" style="margin-top:32px">Bảo dưỡng điều hòa</h3>
+<div class="plans one"><div class="plan"><h3>Bảo dưỡng Máy lạnh</h3><div class="pr">Từ 350,000đ ~</div><p>Giúp điều hòa hoạt động hiệu quả, ngăn ngừa những sự cố hỏng hóc không đáng có và kéo dài tuổi thọ sản phẩm bằng dịch vụ bảo dưỡng chuyên sâu của LG.</p><button type="button" class="btn demo-btn">Đăng ký</button><ul><li>Khử khuẩn dàn lạnh bằng tia UV</li><li>Vệ sinh lưới lọc dàn lạnh, dàn nóng</li><li>Kiểm tra hoạt động của máy sau khi bảo dưỡng</li><li>Khử khuẩn dàn lạnh, dàn nóng bằng hơi nước nóng</li></ul></div></div>
+
+<h3 class="sub" style="margin-top:32px">Dịch vụ hỗ trợ thêm</h3>
+<div class="cols c2"><div class="col"><h3>Hỗ trợ thêm</h3><ul class="tick"><li>Evening Care+: sửa ngoài giờ hành chính</li><li>Ontime Care: hẹn lịch sửa đúng giờ</li></ul></div></div>
+<h3 class="sub" style="margin-top:32px">Những điều cần biết</h3>
+<details open><summary>Nên mua gia hạn lúc nào?</summary><p>Tốt nhất là khi máy còn bảo hành chính hãng. Nếu mua sau khi hết bảo hành, gói có 30 ngày chờ và sự cố trong thời gian này không được bảo hành.</p></details>
+<details><summary>Gói gia hạn bao gồm gì?</summary><p>Phạm vi giống bảo hành chính hãng, do LG và trung tâm bảo hành ủy quyền thực hiện. Số lần sửa không giới hạn, và LG cam kết hoàn tất sửa chữa trong 30 ngày làm việc kể từ lần kiểm tra đầu tiên.</p></details>
+<details><summary>Có được hoàn tiền không?</summary><p>Có thể yêu cầu hoàn tiền trong 30 ngày kể từ ngày mua gói, nếu chưa có yêu cầu bảo hành nào.</p></details>
+<p class="note">Không phải model hay thời điểm nào cũng có chương trình gia hạn giống nhau. Hãy xác nhận model, chi phí và thời hạn cụ thể trước khi đăng ký.</p>
+<h2 id="s-dieukien" class="tsec">Điều kiện bảo hành</h2>
+<div class="cols c2"><div class="col good"><h3>Được bảo hành khi</h3><ul class="tick"><li>Sản phẩm chính hãng LG, phân phối tại Việt Nam bởi LG hoặc nhà phân phối chính thức (kể cả quà tặng mang nhãn LG và hàng trưng bày).</li><li>Còn trong thời hạn bảo hành.</li><li>Tên model trên phiếu bảo hành, hóa đơn, hệ thống bảo hành điện tử trùng với model trên máy.</li><li>Lỗi do nhà sản xuất.</li><li>Nhãn, kiểu và số máy còn nguyên dạng.</li></ul></div><div class="col"><h3>Bị từ chối bảo hành khi</h3><ul class="tick"><li>Hư hỏng do thiên tai, hỏa hoạn, gỉ sét, ăn mòn hóa chất, côn trùng hoặc động vật xâm nhập.</li><li>Dùng sai điện áp, đặt nơi bụi bẩn, ẩm ướt hoặc bị nước vào.</li><li>Lỗi người dùng hoặc tác động bên ngoài như rơi, biến dạng, vỡ.</li><li>Lắp đặt, sử dụng, bảo trì sai hướng dẫn.</li><li>Đã bị sửa bởi đơn vị không được LG ủy quyền.</li><li>Hết hạn bảo hành, không phải hàng LG chính hãng hoặc là hàng khuyến mại.</li></ul></div></div>
+<h2 id="s-thoihan" class="tsec">Thời hạn bảo hành máy lạnh LG</h2>
+<h3 class="sub">Điều hòa treo tường Inverter</h3>
+<div style="overflow-x:auto"><table><thead><tr><th>Trường hợp</th><th>Thời hạn bảo hành</th></tr></thead><tbody><tr><td>Có ngày kích hoạt SW hoặc có hóa đơn mua hàng</td><td>24 tháng kể từ ngày mua, nhưng không quá 48 tháng kể từ ngày sản xuất</td></tr><tr><td>Chưa kích hoạt SW và không có hóa đơn</td><td>30 tháng kể từ ngày sản xuất</td></tr></tbody></table></div>
+<h3 class="sub" style="margin-top:28px">Lưu ý</h3><ul class="tick"><li>Không có hóa đơn và chưa kích hoạt SW thì LG tính theo ngày sản xuất ghi trên máy hoặc hệ thống. Nếu chỉ biết tháng sản xuất, ngày sản xuất là ngày cuối tháng đó.</li><li>Ngày kích hoạt SW không đúng thực tế được coi như chưa kích hoạt và không có hóa đơn.</li><li>Ngày sản xuất của điều hòa là ngày sản xuất của dàn lạnh. Dàn lạnh còn bảo hành thì cả máy còn bảo hành, kể cả khi dàn nóng đã hết hạn. Dàn lạnh hết hạn thì cả máy hết bảo hành.</li><li>Phạm vi bảo hành có thể khác theo điều khoản ghi trên phiếu bảo hành hoặc sách hướng dẫn.</li></ul>
+<h3 class="sub" style="margin-top:28px">Bảo hành máy nén</h3>
+<p style="margin:0 0 10px">Tính từ ngày mua nếu máy còn bảo hành tiêu chuẩn, tính từ ngày sản xuất nếu máy đã hết bảo hành lúc mua.</p>
+<div class="cols c3"><div class="col good"><h3>10 năm</h3><p>Máy nén điều hòa treo tường Inverter (từ 01/06/2015).</p></div><div class="col"><h3>5 năm</h3><p>Máy nén Inverter các model IFC09M1, IFC12M1, IFC18M1, IFC24M1 (từ 11/02/2026).</p></div><div class="col"><h3>3 năm</h3><p>Máy nén điều hòa ON/OFF (từ 24/02/2023).</p></div></div>
+<h2 id="s-lienhe" class="tsec">Cách liên hệ bảo hành LG</h2>
+<div class="plan" style="margin-bottom:20px"><h3>Trung tâm Thông tin Khách hàng</h3><div class="pr">1800 1503</div><p style="margin-bottom:0">Miễn phí cước gọi. Bấm 1 cho tiếng Việt, 2 cho tiếng Anh, 3 cho tiếng Hàn.</p></div>
+<div class="steps"><div class="col"><h3>1. Hỗ trợ từ xa</h3><p>Gọi tổng đài để được hướng dẫn xử lý sự cố từ xa.</p></div><div class="col"><h3>2. Bảo hành tại nhà</h3><p>Gọi tổng đài để hẹn lịch. Kỹ thuật viên LG được ủy quyền sẽ liên lạc và sửa tại địa chỉ của bạn.</p></div><div class="col"><h3>3. Tại trung tâm bảo hành</h3><p>Gọi tổng đài để được hướng dẫn, hoặc mang máy đến trung tâm cùng phiếu bảo hành hoặc chứng từ mua hàng. Xem danh sách ở trang <a href="/mua-hang" style="color:var(--red);font-weight:600">Mua hàng</a>.</p></div></div>
+`,after(){const t=document.getElementById("toc"),hh=document.querySelector("header").offsetHeight;document.documentElement.style.setProperty("--hh",hh+"px");const B=[...t.querySelectorAll("button")],S=B.map(b=>document.getElementById(b.dataset.t));const on=i=>B.forEach((b,j)=>b.classList.toggle("on",i===j));B.forEach((b,i)=>b.onclick=()=>{S[i].scrollIntoView({behavior:"smooth",block:"start"});on(i)});window.onscroll=()=>{if(!document.getElementById("toc")){window.onscroll=null;return}let c=0;S.forEach((e,i)=>{if(e.getBoundingClientRect().top<=hh+t.offsetHeight+40)c=i});on(c)}}}
+};
+(()=>{const n=document.getElementById("ln"),ph=document.getElementById("lp"),m=document.getElementById("lmsg");document.getElementById("lsend").onclick=()=>{const v=ph.value.replace(/[\s.\-]/g,"");if(!n.value.trim()){m.textContent="Vui lòng nhập họ và tên.";n.focus();return}if(!/^(0|\+84)\d{9,10}$/.test(v)){m.textContent="Số điện thoại chưa đúng. Ví dụ: 0901234567.";ph.focus();return}m.textContent="Cảm ơn "+n.value.trim()+". Nhân viên sẽ liên hệ với bạn sớm (bản demo, thông tin chưa được gửi đi)."}})();
+const order=['home','dual-inverter','cong-suat','san-pham','mua-hang','bao-hanh'];const isF=location.protocol==='file:'||/claudeusercontent\.com$/.test(location.hostname),getCur=()=>{if(location.hash.length>1)return location.hash.slice(1);if(isF)return'home';return location.pathname.replace(/index\.html$/,'').replace(/^\/+|\/+$/g,'')||'home'};let cur=getCur();if(!isF&&location.hash.length>1){try{history.replaceState(null,'','/'+(cur==='home'?'':cur))}catch(_){}}
+function route(){const k0=cur.split('/')[0],k=pages[k0]?k0:"home",p=pages[k],nk=k==='sp'?'san-pham':k;
+document.getElementById("nav").innerHTML=order.map(x=>`<a href="${x==='home'?'/':'/'+x}"${x===nk?' aria-current="page"':""}>${pages[x].t}</a>`).join("");
+{const n=document.getElementById("nav");const c=n.querySelector("[aria-current]");if(c)n.scrollLeft=c.offsetLeft-(n.clientWidth-c.offsetWidth)/2}document.getElementById("fnav").innerHTML=order.map(x=>`<a href="${x==='home'?'/':'/'+x}">${pages[x].t}</a>`).join("");document.getElementById("app").innerHTML=p.h();document.title=p.t+" – LG DUALCOOL";document.querySelector('meta[name=description]').setAttribute("content",typeof p.d==="function"?p.d():p.d);if(isF)document.querySelectorAll('a[href^="/"]').forEach(a=>a.setAttribute('href','#'+(a.getAttribute('href').slice(1)||'home')));scrollTo(0,0);if(p.after)p.after()}
+addEventListener("popstate",()=>{cur=getCur();route()});addEventListener("hashchange",()=>{cur=getCur();route()});
+document.addEventListener('click',e=>{if(e.defaultPrevented||e.metaKey||e.ctrlKey||e.shiftKey||e.button)return;const a=e.target.closest('a[href^="/"],a[href^="#"]');if(!a)return;const h=a.getAttribute('href').replace(/^[\/#]+/,'')||'home';if(!pages[h.split('/')[0]])return;e.preventDefault();try{history.pushState(null,'',isF?'#'+h:(h==='home'?'/':'/'+h))}catch(_){}cur=h;route()});
+route();
+</script>
+</body>
+</html>
