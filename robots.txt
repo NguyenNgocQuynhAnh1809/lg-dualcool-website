@@ -1,9 +1,0 @@
-# robots.txt minh họa cho website demo LG DUALCOOL
-User-agent: *
-Allow: /
-Disallow: /gio-hang/
-Disallow: /tim-kiem?
-Disallow: /*?sort=
-Disallow: /*?filter=
-
-Sitemap: https://www.lgdualcool-demo.vn/sitemap.xml
